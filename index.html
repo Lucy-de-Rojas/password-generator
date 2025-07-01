@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator by Lucy de Rojas</title>
+        <link rel="stylesheet" href="styles.css">
+
+
+        <link rel="icon" href="" type="image/x-icon">
+</head>
+<body>
+        <h1>Password Generator</h1>
+
+        <hr>
+        <main>
+
+                <h2>Adjustments:</h2>
+
+                <!-- ✅  slider letters: -->
+                 <section id="lettersSection">
+                         <p id="lettersCount">Letters: 6</p>
+                         <input type="range" id="lettersRange" name="lettersRange" min="6" max="12" value="6" oninput="handleLetterChange()">
+                        </section>
+
+
+
+                <!-- 🔴  slider numbers: -->
+                <section id="numbersSection">
+                        <p id="numberCount">Numbers: 6</p>
+                        <input type="range" id="numbersRange" name="numbersRange" min="6" max="12" value="6" oninput="handleNumberChange()">
+                </section>
+
+
+
+                <!-- ✅  slider special characters: -->
+                <section id="specialsSection">
+                        <p id="specialsCount">
+                        Special characters: 6</p>
+                        <input type="range" id="specialsRange" name="numbersRange" min="6" max="12" value="6"
+                        oninput="hadleSpecialCharactersChange()"/>
+                                       </section>
+
+
+
+
+<section id="sectionResults">
+        <!-- <p id="resultLetters">Letters</p> -->
+        <!-- <p id="resultNumbers">Numbers</p> -->
+        <!-- <p id="resultSpecials">Special Characters</p> -->
+        <p id="resultPasswordLength"> </p>
+        <hr>
+
+
+        <!-- password display: -->
+        <div id="passwordAndClipboardIcon">
+
+                <p id="resultPassword" onclick="copyToClipboard()" style="cursor: pointer;"></p>
+                <div id="imageIcon" style="cursor: pointer;"  onclick="copyToClipboard()"><img src="./Media/copyIcon.png" width="512px" height="512px" /></div>
+        </div>
+
+
+
+</section>
+
+
+
+
+                <button id="randomiser" onclick="handleRandomiser()">Randomiser</button>
+
+
+
+        </main>
+
+
+        <script src="javascript.js"></script>
+
+</body>
+</html>
