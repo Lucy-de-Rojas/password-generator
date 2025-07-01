@@ -53,14 +53,17 @@ h2 {
         text-align: center;
 }
 
-
+p {
+        font-family: numbers;
+        font-size: 200%;
+        padding: 30px;
+}
 
 
 
 input[type="range"] {
         width: 90%;
 }
-
 
 
 
@@ -75,14 +78,19 @@ main {
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
         body {
                 flex-direction: row;
                 justify-content: space-around;
                 padding: 20px;
         }
 
+        header {
+                width: 30%;
+        }
+
         main {
+                width: 60%;
                 font-size: 150%;
                 line-height: 2.5;
                 margin-bottom: 100px;
