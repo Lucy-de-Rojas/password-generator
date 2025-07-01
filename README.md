@@ -12,5 +12,5 @@
 ## Mobile Screen View:
 
 <div align="center">
-        <img src="Media/ScreenShots/Mobile ScreenView.jpg" alt="Password Generator Screenshot" style="width: 70%;">
+        <img src="Media/ScreenShots/Mobile ScreenView.jpg" alt="Password Generator Screenshot" style="width: 60%;">
 </div>
